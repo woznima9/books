@@ -1,15 +1,12 @@
-package model;
+package bookstore.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
-@Service
 public class Book {
     private String title;
     private String author;
-    @Autowired
     private Date lendDate;
 
     public Book(String title, String author, Date lendDate) {

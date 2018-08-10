@@ -1,7 +1,7 @@
-package dao;
+package bookstore.dao;
 
-import model.Book;
-import org.springframework.stereotype.Repository;
+import bookstore.model.Book;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
@@ -12,11 +12,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Repository
+@Service
 public class CsvBookDao implements BookDao {
-    private String csvBooksFile;
+//    "C:\\Users\\Komp\\Spring\\booksSpringExample\\src\\resources\\books.txt"
+//    "C:\\Users\\Komp\\Spring\\booksSpringExample\\src\\resources\\books.txt"
+
+
+    private String csvBooksFile = "target/classes/books.txt";
 
     public void setCsvBooksFile(String csvBooksFile) {
+
         this.csvBooksFile = csvBooksFile;
     }
 

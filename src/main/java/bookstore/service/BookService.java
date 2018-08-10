@@ -1,15 +1,16 @@
-package service;
+package bookstore.service;
 
-import dao.BookDao;
-import model.Book;
-import org.springframework.beans.factory.annotation.Autowired;
+import bookstore.dao.BookDao;
+import lombok.AllArgsConstructor;
+import bookstore.model.Book;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 @Component
+@AllArgsConstructor
 public class BookService {
-    @Autowired
+
     private BookDao bookDao;
 
     public void setBookDao(BookDao bookDao) {
@@ -34,5 +35,9 @@ public class BookService {
         GregorianCalendar gregorianCalendar = new GregorianCalendar();
         gregorianCalendar.add(Calendar.DATE, -days);
         return gregorianCalendar.getTime();
+    }
+
+    public void dajZnak() {
+        System.out.println("Daję znak życia");
     }
 }

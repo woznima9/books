@@ -1,3 +1,3 @@
-Spring in Action,Craig Walls,20091028
-Java Persistance,Christian Bauer,20091230
-Spring in Practice,Willie Wheeler,20091127
+Spring in Action,Craig Walls,20180610
+Java Persistance,Christian Bauer,20180805
+Spring in Practice,Willie Wheeler,20180609

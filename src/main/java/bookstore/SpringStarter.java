@@ -8,7 +8,7 @@ import bookstore.service.BookService;
 import java.util.List;
 
 
-public class SpringStarter {
+public class SpringStarter {    //run starter
     public static void main(String[] args) throws Exception {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         BookService bookService = ctx.getBean(BookService.class);
